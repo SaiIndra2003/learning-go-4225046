@@ -5,5 +5,13 @@ import (
 )
 
 func main() {
-	fmt.Println("Structs")
+	poodle := Dog{"poodle",34}
+	bark := Dog{Breed: "Bark",Weight: 33}
+	bark.Weight++
+	fmt.Println(poodle,bark)
+}
+
+type Dog struct{
+	Breed string
+	Weight int
 }
