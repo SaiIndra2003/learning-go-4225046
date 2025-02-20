@@ -15,6 +15,6 @@ func main() {
 	fmt.Printf("Current time %s\n", now)
 	fmt.Println("Dates and times")
 
-	fmt.Printf(now.Format(time.ANSIC) + "\n")
+	fmt.Printf("%s", now.Format(time.ANSIC) + "\n")
 
 }
