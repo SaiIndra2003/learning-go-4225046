@@ -5,9 +5,14 @@ import (
 )
 
 func main() {
-	fmt.Println(add(1,3))
+	fmt.Println(add("Hi",1,3,33,333))
 }
 
-func add(val1 int, val2 int) int{
-	return val1 + val2
+func add( val3 string,vals ...int) int{
+	fmt.Println(val3)
+	sum := 0
+	for _, v := range vals {
+		sum += v
+	}
+	return sum
 }
